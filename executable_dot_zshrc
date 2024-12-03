@@ -115,6 +115,7 @@ export GOPATH=$HOME/go
 
 alias ll="ls -la"
 alias c="clear"
+alias cz="chezmoi"
 # export PATH="/opt/homebrew/opt/openjdk@11/bin:$JAVA_HOME/bin:$PATH"
 export PATH="$HOME/App/bin:$JAVA_HOME/bin:$HOME/.emacs.d/bin:$GOPATH/bin:/opt/podman/bin:$PATH"
 
