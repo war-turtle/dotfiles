@@ -1,0 +1,10 @@
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[merge]
+	conflictStyle = diff3
+; include user name and email for work in this file
+[includeIf "gitdir:~/work/"]
+	path = ~/work/.gitconfig
+; include user name and email for private acc in this file
+[includeIf "gitdir:~/App/"]
+	path = ~/App/.gitconfig

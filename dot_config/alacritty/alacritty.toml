@@ -1,0 +1,8 @@
+import = ["~/.config/alacritty/themes/themes/monokai_pro.toml"]
+
+[font]
+size = 15.0
+normal = { family = "JetBrains Mono", style = "Regular" }
+
+[window]
+opacity = 0.95
