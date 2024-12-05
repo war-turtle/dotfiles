@@ -1,37 +1,37 @@
-# setup oh-my-zsh
-[".oh-my-zsh"]
-type = "archive"
-url = "https://github.com/ohmyzsh/ohmyzsh/archive/master.tar.gz"
-exact = true
-# when you download an archive file and extract it's component into output directory
-# skipComponents = 1 tells chezmoi to skip one component from the extracted data
-# i.e. output directory will be removed, and it's component will be dumped into .oh-my-zsh
+## setup oh-my-zsh
+#[".oh-my-zsh"]
+#type = "archive"
+#url = "https://github.com/ohmyzsh/ohmyzsh/archive/master.tar.gz"
+#exact = true
+## when you download an archive file and extract it's component into output directory
+## skipComponents = 1 tells chezmoi to skip one component from the extracted data
+## i.e. output directory will be removed, and it's component will be dumped into .oh-my-zsh
+##
+## if you want to include only (let's say) plugin directory. Then add an include key and skipComponents=2
+#stripComponents = 1
+#refreshPeriod = "168h"
 #
-# if you want to include only (let's say) plugin directory. Then add an include key and skipComponents=2
-stripComponents = 1
-refreshPeriod = "168h"
-
-# ohmyzsh plugins
-[".oh-my-zsh/custom/plugins/zsh-autosuggestions"]
-type = "archive"
-url = "https://github.com/zsh-users/zsh-autosuggestions/archive/refs/heads/master.zip"
-exact = true
-stripComponents = 1
-refreshPeriod = "168h"
-
-[".oh-my-zsh/custom/plugins/zsh-syntax-highlighting"]
-type = "archive"
-url = "https://github.com/zsh-users/zsh-syntax-highlighting/archive/refs/heads/master.zip"
-exact = true
-stripComponents = 1
-refreshPeriod = "168h"
-
-[".oh-my-zsh/custom/plugins/zsh-completions"]
-type = "archive"
-url = "https://github.com/zsh-users/zsh-completions/archive/refs/heads/master.zip"
-exact = true
-stripComponents = 1
-refreshPeriod = "168h"
+## ohmyzsh plugins
+#[".oh-my-zsh/custom/plugins/zsh-autosuggestions"]
+#type = "archive"
+#url = "https://github.com/zsh-users/zsh-autosuggestions/archive/refs/heads/master.zip"
+#exact = true
+#stripComponents = 1
+#refreshPeriod = "168h"
+#
+#[".oh-my-zsh/custom/plugins/zsh-syntax-highlighting"]
+#type = "archive"
+#url = "https://github.com/zsh-users/zsh-syntax-highlighting/archive/refs/heads/master.zip"
+#exact = true
+#stripComponents = 1
+#refreshPeriod = "168h"
+#
+#[".oh-my-zsh/custom/plugins/zsh-completions"]
+#type = "archive"
+#url = "https://github.com/zsh-users/zsh-completions/archive/refs/heads/master.zip"
+#exact = true
+#stripComponents = 1
+#refreshPeriod = "168h"
 
 # tmux plugins
 [".config/tmux/plugins/tmux-sensible"]
