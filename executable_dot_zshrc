@@ -19,7 +19,11 @@ zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 
+# some snippets from omz plugins require completion directory to exist
+mkdir -p "$ZSH_CACHE_DIR/completions"
+
 # Add in snippets
+zinit snippet OMZP::mise
 zinit snippet OMZL::git.zsh
 zinit snippet OMZP::git
 zinit snippet OMZP::vi-mode
