@@ -26,6 +26,13 @@ exact = true
 stripComponents = 1
 refreshPeriod = "168h"
 
+[".oh-my-zsh/custom/plugins/zsh-completions"]
+type = "archive"
+url = "https://github.com/zsh-users/zsh-completions/archive/refs/heads/master.zip"
+exact = true
+stripComponents = 1
+refreshPeriod = "168h"
+
 # tmux plugins
 [".config/tmux/plugins/tmux-sensible"]
 type = "archive"
