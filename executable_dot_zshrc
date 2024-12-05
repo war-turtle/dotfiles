@@ -66,6 +66,9 @@ alias ll="ls -la --color"
 alias c="clear"
 alias cz="chezmoi"
 
+# setup language as UTF-8
+LANG=en_EN.UTF8
+
 # setup path
 export PATH="$HOME/App/bin:$HOME/.emacs.d/bin:$GOPATH/bin:/opt/podman/bin:$PATH"
 
@@ -87,7 +90,7 @@ export PATH="/Applications/IntelliJ IDEA.app/Contents/MacOS:$PATH"
 export VI_MODE_SET_CURSOR=true
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/kartik.yadav/.rd/bin:$PATH"
+export PATH="$HOME/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
 # setup pyenv
