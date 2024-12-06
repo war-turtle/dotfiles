@@ -26,7 +26,7 @@ mkdir -p "$ZSH_CACHE_DIR/completions"
 zinit snippet OMZP::mise
 zinit snippet OMZL::git.zsh
 zinit snippet OMZP::git
-# zinit snippet OMZP::vi-mode
+zinit snippet OMZP::vi-mode
 
 # Load completions
 autoload -Uz compinit && compinit
@@ -87,7 +87,8 @@ export GOPATH=$HOME/go
 export PATH="/Applications/IntelliJ IDEA.app/Contents/MacOS:$PATH"
 
 # for vim-mode in terminal using ohmyzsh plugins
-export VI_MODE_SET_CURSOR=true
+MODE_INDICATOR="NORMAL->"
+PROMPT="$PROMPT\$(vi_mode_prompt_info)"
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="$HOME/.rd/bin:$PATH"
