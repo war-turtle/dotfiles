@@ -22,7 +22,7 @@ zinit light Aloxaf/fzf-tab
 # Add in snippets
 zinit snippet OMZL::git.zsh
 zinit snippet OMZP::git
-zinit snippet OMZP::vi-mode
+# zinit snippet OMZP::vi-mode
 
 # Load completions
 autoload -Uz compinit && compinit
