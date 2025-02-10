@@ -3,6 +3,9 @@ This repo contains dotfiles managed using [chezmoi](https://www.chezmoi.io).
 
 # Steps
 We will be calling chezmoi, cz for ease of use.
+
+Note: `cz` is an alias for `chezmoi` command
+
 ## use these files on a new laptop
 1. download cz
 2. use:
@@ -12,6 +15,26 @@ We will be calling chezmoi, cz for ease of use.
    
    chezmoi apply
     ```
+
+## How to update all your dotfiles
+To update all you dotfiles with changes from github repo, do the following
+```bash
+cz cd
+git pull origin main
+cz diff # to view what changes will be applied
+cz -v apply # to write the changes download from github to your dotfiles
+    # -v is verbose flag
+```
+
+## To add a new file/directory to cz
+```bash
+cz add <path-to-file/directory>
+cz cd
+git add .
+git commit -m "<commit-msg>"
+git push origin main
+cz -v apply
+```
 
 ## make changes to a file managed by cz
 ```bash
