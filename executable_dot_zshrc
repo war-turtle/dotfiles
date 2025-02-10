@@ -94,8 +94,6 @@ PROMPT="$PROMPT\$(vi_mode_prompt_info)"
 export PATH="$HOME/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
-# setup pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-export PYENV_ROOT="$HOME/.pyenv"
+# setup mise en place
+eval "$(mise activate zsh)"
+
