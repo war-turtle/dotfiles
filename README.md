@@ -49,5 +49,16 @@ chezmoi diff # to view the difference
 
 chezmoi merge ~/.zshrc
 ```
+In the opened vs code window, local files are on the left and files from github are on the right
+
+you can also use merge-all to merge all the file once instead of doing it one by one
+```bash
+cz merge-all
+```
+
+If you decide to do merges one by one and want to check which all files changed use:
+```bash
+cz diff | grep '^+++ '
+```
 
 refer to [faqs](https://www.chezmoi.io/user-guide/frequently-asked-questions/usage/) to read `How do I edit my dotfiles with chezmoi?`
