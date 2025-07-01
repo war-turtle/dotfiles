@@ -1,0 +1,18 @@
+[tools]
+"cargo:gitui" = "latest"
+"cargo:oxker" = "latest"
+deno = "latest"
+go = "1.23"
+golangci-lint = "latest"
+java = "temurin-11"
+lazydocker = "latest"
+lazygit = "latest"
+maven = "3.9.9"
+neovim = "latest"
+pipx = "latest"
+"pipx:awsmfa" = "latest"
+python = "3.13"
+rust = "latest"
+
+[settings]
+experimental = true
