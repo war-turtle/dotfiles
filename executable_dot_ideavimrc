@@ -52,3 +52,13 @@ nmap <leader><C-n> <Plug>AllWholeOccurrences
 xmap <leader><C-n> <Plug>AllWholeOccurrences
 nmap <leader>g<C-n> <Plug>AllOccurrences
 xmap <leader>g<C-n> <Plug>AllOccurrences
+
+set mini-ai
+
+" Map some common actions to IdeaVim
+nmap gi <Action>(GotoImplementation)
+nmap gd <Action>(GotoDeclaration)
+nmap gb <Action>(ToggleLineBreakpoint)
+nmap <space><space> <Action>(SearchEverywhere)
+nmap <space>sr <Action>(RecentFiles)
+nmap <space>sf <Action>(FindInPath)

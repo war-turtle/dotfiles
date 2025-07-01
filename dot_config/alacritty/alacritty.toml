@@ -1,5 +1,5 @@
 [general]
-import = ["~/.config/alacritty/themes/themes/monokai_pro.toml"]
+import = ["~/.config/alacritty/themes/themes/tokyo_night.toml"]
 
 [font]
 size = 15.0

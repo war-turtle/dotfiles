@@ -20,6 +20,7 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 
 # some snippets from omz plugins require completion directory to exist
+# a fix for this was submitted in zinit repo, remove this in future
 mkdir -p "$ZSH_CACHE_DIR/completions"
 
 # Add in snippets
@@ -69,14 +70,11 @@ alias cz="chezmoi"
 # setup language as UTF-8
 LANG=en_EN.UTF8
 
-# setup path
-export PATH="$HOME/App/bin:$HOME/.emacs.d/bin:$GOPATH/bin:/opt/podman/bin:$PATH"
-
 # setup default editor
 export EDITOR="$(which vim)"
 
 # setup for golang
-export GOPATH=$HOME/go
+# export GOPATH=$HOME/go
 
 # add intellij idea to path
 export PATH="/Applications/IntelliJ IDEA.app/Contents/MacOS:$PATH"
@@ -84,6 +82,9 @@ export PATH="/Applications/IntelliJ IDEA.app/Contents/MacOS:$PATH"
 # for vim-mode in terminal using ohmyzsh plugins
 MODE_INDICATOR="NORMAL->"
 PROMPT="$PROMPT\$(vi_mode_prompt_info)"
+
+# setup path
+export PATH="$HOME/App/bin:$HOME/.emacs.d/bin:$GOPATH/bin:/opt/podman/bin:$PATH"
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="$HOME/.rd/bin:$PATH"
