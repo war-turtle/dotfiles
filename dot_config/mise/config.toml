@@ -1,6 +1,7 @@
 [tools]
 "cargo:gitui" = "latest"
 "cargo:oxker" = "latest"
+cheat = "latest"
 deno = "latest"
 go = "1.23"
 golangci-lint = "latest"

@@ -66,6 +66,7 @@ alias ls="ls --color"
 alias ll="ls -la --color"
 alias c="clear"
 alias cz="chezmoi"
+alias cheat="cheat -c"
 
 # setup language as UTF-8
 LANG=en_EN.UTF8
